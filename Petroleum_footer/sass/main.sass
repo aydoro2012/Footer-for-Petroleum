@@ -1,0 +1,89 @@
+$height: 50px
+$display: flex
+$flex-wrap: wrap
+$font-family: Lato
+$font-base: 14px
+$font-base-left: 12px
+$base-color: #c8c8c8
+$background-color: #f9f9fb
+$main-background-color: #fff
+$outline: none
+$border: 0px
+$align-self: center
+
+body 
+	max-width: 1980px
+
+.footer, .footer-item_left, .footer-item_right, form, input
+	min-height: $height
+	display: $display
+
+.footer, .footer-item_left
+	flex-wrap: $flex-wrap
+
+.footer 
+	background-color: $main-background-color
+	justify-content: space-between
+	align-items: center
+	box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1)
+
+.footer-item_left
+	font-size: $font-base-left
+	width: 343px
+	font-family: PFAgoraSansPro
+	padding-left: 9px
+	margin: 0
+
+input
+	background-color: $background-color
+	border: $border
+	line-height: 3.4
+	color: $base-color
+	outline: none
+	resize: none
+	padding-left: 20px
+	width: 88%
+	min-height: 77px
+	white-space: pre-line
+
+.block-information
+	color: #a3a3a3
+
+input, button 
+	outline: $outline
+	border: $border
+	background-color: transparent
+
+form 
+    width: 100%
+    display: $display
+
+.footer-item_right
+	width: 545.8px
+	background-color: $background-color
+
+.message-form,.form-button 
+	align-self: $align-self
+
+.underline 
+    border-bottom: 1px solid currentColor
+    display: inline-block
+    line-height: 0.85
+    text-shadow:
+    -1px 0px white,
+    -1px 0px white,
+    1px 1px white,
+    1px 1px white
+@media screen and (max-width: 914px)
+    .footer 
+    	justify-content: center
+    .footer-item_left 
+    	padding-left: 9px
+    	justify-content: center
+
+    
+
+@media screen and (max-width: 903px)
+	.footer-item_left 
+    	padding-left: 0
+    	
